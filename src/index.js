@@ -1,20 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app';
-import store from './redux/configureStore'
+import App from './containers/app';
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root'),
-// );
-
-store.dispatch({
-  type: "bookAdded",
-  payload: {
-    description: "Book1"
-  }
-});
-
-console.log(store.getState());
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'),
+);

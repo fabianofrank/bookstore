@@ -1,5 +1,5 @@
-let id = 0;
-
+/* eslint-disable no-return-assign */
+let id = [];
 // function reducer(state = [], action) {
 //   if (action.type === 'bookAdded')
 //     return [
@@ -18,17 +18,17 @@ let id = 0;
 
 export default function reducer(state = [], action) {
   switch (action.type) {
-    case "bookAdded":
+    case 'bookAdded':
       return [
         ...state,
         {
-          id: ++id,
+          id: id += 1,
           description: action.payload.description,
-          resolved: false
-        }
+          resolved: false,
+        },
       ];
-    case "bookRemoved":
-      return state.filter(book => book.id !== action.payload.id);
+    case 'bookRemoved':
+      return state.filter((book) => book.id !== action.payload.id);
     default:
       return state;
   }
