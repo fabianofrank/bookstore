@@ -1,8 +1,8 @@
 import React from 'react';
 import Categories from '../components/categories';
 
-const DisplayCategories = () => (
+const BookCategories = () => (
   <Categories />
 );
 
-export default DisplayCategories;
+export default BookCategories;
