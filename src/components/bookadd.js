@@ -26,7 +26,7 @@ const BookAdd = () => {
       <form id="add-form" onSubmit={submitBookToStore}>
         <input id="add-title" onChange={(e) => setTitle(e.target.value)} value={title} placeholder="Book title" required />
         <input id="add-author" onChange={(e) => setAuthor(e.target.value)} value={author} placeholder="Author" required />
-        <button id="add-bttn" type="button">ADD BOOK</button>
+        <button id="add-bttn" type="submit">ADD BOOK</button>
       </form>
     </section>
   );

@@ -1,5 +1,4 @@
 /* eslint-disable no-return-assign */
-
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
