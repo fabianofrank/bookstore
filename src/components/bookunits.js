@@ -14,7 +14,6 @@ const BookUnits = ({ id, title, author }) => {
         <button
           type="button"
           onClick={(e) => {
-            console.log(e.target.parentElement.parentElement.id);
             dispatch(removeBook(e.target.parentElement.parentElement.id));
           }}
         >
