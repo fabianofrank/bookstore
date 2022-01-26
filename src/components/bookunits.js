@@ -8,13 +8,14 @@ const BookUnits = ({ id, title, author }) => {
 
   return (
     <div id={id}>
-      <div key={id}>
+      <div>
         <div>{title}</div>
         <div>{author}</div>
         <button
           type="button"
           onClick={(e) => {
-            dispatch(removeBook(e.target.id));
+            console.log(e.target.parentElement.parentElement.id);
+            dispatch(removeBook(e.target.parentElement.parentElement.id));
           }}
         >
           Remove
