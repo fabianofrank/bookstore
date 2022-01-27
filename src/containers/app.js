@@ -4,8 +4,8 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import BookDisplay from './bookdisplay';
-import BookCategories from './bookcategories';
+import BookDisplay from './bookDisplay';
+import BookCategories from './bookCategories';
 import Navbar from '../components/navbar';
 
 const App = () => (

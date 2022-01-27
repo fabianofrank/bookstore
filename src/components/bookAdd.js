@@ -4,28 +4,28 @@ import { addBook } from '../redux/books/books';
 
 const BookAdd = () => {
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   const dispatch = useDispatch();
 
   const submitBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: new Date().getTime().toString(),
+      item_id: new Date().getTime().toString(),
       title,
-      author,
+      category,
     };
     dispatch(addBook(newBook));
     setTitle('');
-    setAuthor('');
+    setCategory('');
   };
 
   return (
     <section id="add-book">
       <h2>ADD NEW BOOK</h2>
       <form id="add-form" onSubmit={submitBookToStore}>
-        <input id="add-title" onChange={(e) => setTitle(e.target.value)} value={title} placeholder="Book title" required />
-        <input id="add-author" onChange={(e) => setAuthor(e.target.value)} value={author} placeholder="Author" required />
+        <input className="add-input" onChange={(e) => setTitle(e.target.value)} value={title} placeholder="Book title" required />
+        <input className="add-input" onChange={(e) => setCategory(e.target.value)} value={category} placeholder="Category" required />
         <button id="add-bttn" type="submit">ADD BOOK</button>
       </form>
     </section>
