@@ -1,19 +1,20 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import BookAdd from '../components/bookadd';
-import BookUnits from '../components/bookunits';
+import BookAdd from '../components/bookAdd';
+import BookUnits from '../components/bookUnits';
 
 const BookDisplay = () => {
   const books = useSelector((state) => state.books);
+
   return (
     <div>
       <section id="shelf">
         {books.map((book) => (
           <BookUnits
-            id={book.id}
+            key={book.item_id}
+            item_id={book.item_id}
             title={book.title}
-            author={book.author}
-            key={book.id}
+            category={book.category}
           />
         ))}
       </section>
