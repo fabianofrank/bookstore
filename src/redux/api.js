@@ -15,7 +15,7 @@ export const postBook = async (newBook) => {
     },
     body: JSON.stringify(newBook),
   });
-  return response.json();
+  return response;
 };
 
 // DELETE

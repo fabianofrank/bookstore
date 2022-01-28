@@ -1,28 +1,21 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import BookAdd from '../components/bookAdd';
 import BookUnits from '../components/bookUnits';
-import { loadBook } from '../redux/books/books';
 
 const BookDisplay = () => {
   const books = useSelector((state) => state.books);
-  const booksArray = Object.values(books);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(loadBook());
-  }, []);
 
   return (
     <div>
       <section id="shelf">
-        {booksArray.map((book) => (book.map((miniBook) => (
+        {books.map((book) => (
           <BookUnits
-          // item_id={book.id}
-            title={miniBook.title}
-            category={miniBook.category}
+            key={book.item_id}
+            item_id={book.item_id}
+            title={book.title}
+            category={book.category}
           />
-        ))
         ))}
       </section>
       <BookAdd />

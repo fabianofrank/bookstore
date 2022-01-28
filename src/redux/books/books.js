@@ -9,6 +9,7 @@ const LOAD_BOOK = 'bookStore/books/LOAD_BOOK';
 // ACTIONS
 export const addBook = (payload) => async (dispatch) => {
   await postBook(payload);
+  console.log(payload);
   dispatch({
     type: ADD_BOOK,
     payload,
@@ -25,9 +26,18 @@ export const removeBook = (payload) => async (dispatch) => {
 
 export const loadBook = () => async (dispatch) => {
   const booksArray = await fetchBook();
+  const books = [];
+  [...Object.entries(booksArray)].forEach((b) => {
+    const book = {
+      item_id: b[0],
+      title: b[1][0].title,
+      category: b[1][0].category,
+    };
+    books.push(book);
+  });
   dispatch({
     type: LOAD_BOOK,
-    payload: booksArray,
+    payload: books,
   });
 };
 
@@ -40,7 +50,7 @@ const BookReducer = (state = [], action) => {
         action.payload,
       ];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload);
+      return state.filter((book) => book.item_id !== action.payload);
     case LOAD_BOOK:
       return action.payload;
     default:
