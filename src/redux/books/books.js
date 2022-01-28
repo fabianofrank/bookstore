@@ -9,7 +9,6 @@ const LOAD_BOOK = 'bookStore/books/LOAD_BOOK';
 // ACTIONS
 export const addBook = (payload) => async (dispatch) => {
   await postBook(payload);
-  console.log(payload);
   dispatch({
     type: ADD_BOOK,
     payload,
