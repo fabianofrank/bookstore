@@ -5,7 +5,7 @@ This is a project developed in React and Rudux, that creates a Bookstore to add,
 
 ## Screenshot
 
-![screenshot](./public/bookstore.png)
+![screenshot](./public/screenshot.png)
 
 
 ## Built With
