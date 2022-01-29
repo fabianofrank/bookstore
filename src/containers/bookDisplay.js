@@ -7,7 +7,7 @@ const BookDisplay = () => {
   const books = useSelector((state) => state.books);
 
   return (
-    <div>
+    <div id="wrapper">
       <section id="shelf">
         {books.map((book) => (
           <BookUnits
