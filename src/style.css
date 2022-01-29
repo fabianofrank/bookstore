@@ -8,6 +8,11 @@
   color: black;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   border-bottom: 1px solid hsl(0, 0%, 87%);
 }
@@ -68,6 +73,7 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 24px;
+  margin-bottom: 24px;
   padding: 24px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
@@ -162,7 +168,6 @@ nav {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 24px;
-  position: absolute;
   bottom: 200px;
   width: 100vw;
   border-top: 1px solid rgb(222, 222, 222);
