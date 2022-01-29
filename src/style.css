@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+header {
+  border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: rgb(0, 183, 255);
+}
+
+h2 {
+  font-size: 2em;
+  color: rgb(161, 161, 161);
+}
+
+a {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgb(161, 161, 161);
+}
+
+a:focus {
+  font-weight: bold;
+}
+
+a:active {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+#wrapper {
+  background-color: rgb(241, 241, 241);
+  height: 100vh;
+}
+
+#shelf {
+  display: flex;
+  flex-direction: column;
+}
+
+.unit {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 24px;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.unit-main {
+  flex: 1;
+}
+
+.unit-category {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  padding-bottom: 6px;
+}
+
+.unit-title {
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+}
+
+.unit-author {
+  color: rgb(0, 183, 255);
+  font-weight: bold;
+  padding-bottom: 24px;
+}
+
+.unit-graph {
+  display: flex;
+}
+
+.graph {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid rgb(161, 161, 161);
+  padding-right: 24px;
+}
+
+.percentages {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chapter-div {
+  padding: 0 24px 0 48px;
+  text-align: left;
+}
+
+.current {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  padding-bottom: 12px;
+}
+
+.chapter {
+  font-size: 20px;
+  color: rgb(49, 49, 49);
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.update-bttn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 24px;
+  width: 150px;
+  height: 37px;
+  font-size: 12px;
+  font-weight: bold;
+  align-self: flex-start;
+  border: none;
+  background-color: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.remove-bttn {
+  background: none;
+  border: none;
+  border-left: 1px solid rgb(161, 161, 161);
+  cursor: pointer;
+}
+
+#add-book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 24px;
+  position: absolute;
+  bottom: 200px;
+  width: 100vw;
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+#add-form {
+  padding-top: 24px;
+}
+
+.add-input {
+  border-radius: 5px;
+  padding: 7.5px;
+  margin-right: 24px;
+  min-width: 250px;
+  font-size: 18px;
+  border: 1px solid rgb(222, 222, 222);
+  color: rgb(161, 161, 161);
+}
+
+.add-input:nth-child(1) {
+  width: 500px;
+}
+
+#add-bttn {
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 24px;
+  margin-top: 12px;
+  width: 150px;
+  height: 37px;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-start;
+  border: none;
+  background-color: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#user {
+  width: 24px;
+}
+
+.circle {
+  max-width: 72px;
+  max-height: 72px;
+}
+
+#under {
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+}

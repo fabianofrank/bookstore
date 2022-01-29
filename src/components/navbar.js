@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import user from '../user.png';
 
 const Navbar = () => (
   <header>
     <nav>
       <div className="nav">
         <h1>Bookstore CMS</h1>
-        <Link to="/">Books</Link>
-        <Link to="/categories">Categories</Link>
+        <Link to="/">BOOKS</Link>
+        <Link to="/categories">CATEGORIES</Link>
       </div>
-      <img alt="graphic" />
+      <img id="user" src={user} alt="user" />
     </nav>
   </header>
 );
