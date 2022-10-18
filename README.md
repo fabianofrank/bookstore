@@ -5,8 +5,8 @@ This is a project developed in React and Rudux, that creates a Bookstore to add,
 
 ## Screenshot
 
-![screenshot](./public/screenshot.png)
-
+![bookstore_mock](https://user-images.githubusercontent.com/68971295/196503890-42236b35-2918-4280-beeb-83941546a6ad.png)
+### [Demo](https://fabianofrank.github.io/bookstore/)
 
 ## Built With
 
@@ -15,10 +15,6 @@ This is a project developed in React and Rudux, that creates a Bookstore to add,
 - JavaScript
 - React
 - Redux
-
-## Live Demo
-
-[GitHub Link](https://fabianofrank.github.io/bookstore/)
 
 
 ## Getting Started
